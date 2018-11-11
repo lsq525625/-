@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://ns.adobe.com/air/application/16.0">
+  <!-- Adobe AIR Application Descriptor File Template.
+
+	Specifies parameters for identifying, installing, and launching AIR applications.
+
+	xmlns - The Adobe AIR namespace: http://ns.adobe.com/air/application/1.5.3
+			The last segment of the namespace specifies the version 
+			of the AIR runtime required for this application to run.
+			
+	minimumPatchLevel - The minimum patch level of the AIR runtime required to run 
+			the application. Optional.
+-->
+  <!-- The application identifier string, unique to this application. Required. -->
+  <id>MarkManOne</id>
+  <!-- Used as the filename for the application. Required. -->
+  <filename>Mark Man</filename>
+  <!-- The name that is displayed in the AIR application installer. 
+	     May have multiple values for each language. See samples or xsd schema file. Optional. -->
+  <name>
+    <text xml:lang="zh">MarkMan - 让设计更有爱！</text>
+    <text xml:lang="en">MarkMan - minimize spec time!</text>
+  </name>
+  <!-- An application version designator (such as "v1", "2.5", or "Alpha 1"). Required. -->
+  <versionNumber>2.7.21</versionNumber>
+  <!-- Description, displayed in the AIR application installer.
+	     May have multiple values for each language. See samples or xsd schema file. Optional. -->
+  <description>
+    <text xml:lang="zh">一款设计稿标注工具，可以节省设计师在设计稿上添加和修改标注的时间，也能方便前端工程师测量颜色和距离，让设计更有爱。</text>
+    <text xml:lang="en">An efficient spec'ing and measuring tool.</text>
+  </description>
+  <!-- Copyright information. Optional -->
+  <copyright>2015/09/24</copyright>
+  <!-- Publisher ID. Used if you're updating an application created prior to 1.5.3 -->
+  <!-- <publisherID></publisherID> -->
+  <!-- Settings for the application's initial window. Required. -->
+  <initialWindow>
+    <renderMode>direct</renderMode>
+    <requestedDisplayResolution>high</requestedDisplayResolution>
+    <!-- The main SWF or HTML file of the application. Required. -->
+    <!-- Note: In Flash Builder, the SWF reference is set automatically. -->
+    <content>MarkManOne.swf</content>
+    <!-- The title of the main window. Optional. -->
+    <title>马克鳗</title>
+    <!-- The type of system chrome to use (either "standard" or "none"). Optional. Default standard. -->
+    <systemChrome>none</systemChrome>
+    <!-- Whether the window is transparent. Only applicable when systemChrome is none. Optional. Default false. -->
+    <transparent>true</transparent>
+    <!-- Whether the window is initially visible. Optional. Default false. -->
+    <!-- <visible></visible> -->
+    <!-- Whether the user can minimize the window. Optional. Default true. -->
+    <!-- <minimizable></minimizable> -->
+    <!-- Whether the user can maximize the window. Optional. Default true. -->
+    <!-- <maximizable></maximizable> -->
+    <!-- Whether the user can resize the window. Optional. Default true. -->
+    <!-- <resizable></resizable> -->
+    <!-- The window's initial width. Optional. -->
+    <!-- <width></width> -->
+    <!-- The window's initial height. Optional. -->
+    <!-- <height></height> -->
+    <!-- The window's initial x position. Optional. -->
+    <!-- <x></x> -->
+    <!-- The window's initial y position. Optional. -->
+    <!-- <y></y> -->
+    <!-- The window's minimum size, specified as a width/height pair, such as "400 200". Optional. -->
+    <!-- <minSize></minSize> -->
+    <!-- The window's initial maximum size, specified as a width/height pair, such as "1600 1200". Optional. -->
+    <!-- <maxSize></maxSize> -->
+  </initialWindow>
+  <!-- The subpath of the standard default installation location to use. Optional. -->
+  <!-- <installFolder></installFolder> -->
+  <!-- The subpath of the Programs menu to use. (Ignored on operating systems without a Programs menu.) Optional. -->
+  <!-- <programMenuFolder></programMenuFolder> -->
+  <!-- The icon the system uses for the application. For at least one resolution,
+		 specify the path to a PNG file included in the AIR package. Optional. -->
+  <icon>
+    <image16x16>resource/16.png</image16x16>
+    <image32x32>resource/32.png</image32x32>
+    <image48x48>resource/48.png</image48x48>
+    <image128x128>resource/128.png</image128x128>
+  </icon>
+  <!-- Whether the application handles the update when a user double-clicks an update version
+	of the AIR file (true), or the default AIR application installer handles the update (false).
+	Optional. Default false. -->
+  <!-- <customUpdateUI></customUpdateUI> -->
+  <!-- Whether the application can be launched when the user clicks a link in a web browser.
+	Optional. Default false. -->
+  <!-- <allowBrowserInvocation></allowBrowserInvocation> -->
+  <!-- Listing of file types for which the application can register. Optional. -->
+  <fileTypes>
+    <!-- Defines one file type. Optional. -->
+    <fileType>
+      <!-- The name that the system displays for the registered file type. Required. -->
+      <name>MarkMan.ProjectFile</name>
+      <!-- The extension to register. Required. -->
+      <extension>mkm</extension>
+      <!-- The description of the file type. Optional. -->
+      <description>马克鳗的标记文件，用来支持图片的二次编辑</description>
+      <!-- The MIME content type. -->
+      <contentType>text/xml</contentType>
+      <!-- The icon to display for the file type. Optional. -->
+      <icon>
+        <image16x16>resource/mkm16.png</image16x16>
+        <image32x32>resource/mkm32.png</image32x32>
+        <image48x48>resource/mkm48.png</image48x48>
+        <image128x128>resource/mkm128.png</image128x128>
+      </icon>
+    </fileType>
+  </fileTypes>
+</application>
+

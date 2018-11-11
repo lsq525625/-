@@ -1,0 +1,70 @@
+{
+	"name": "dark-plus-material",
+	"description": "The default Dark+ Theme, with material palette and always up to date",
+	"version": "1.4.3",
+	"author": {
+		"name": "Vangware",
+		"url": "https://vangware.com"
+	},
+	"bugs": {
+		"url": "https://github.com/vangware/dark-plus-material/issues"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Dark+ Material",
+				"uiTheme": "vs-dark",
+				"path": "./dark-plus-material.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^10.11.4",
+		"@types/node-fetch": "^2.1.2",
+		"node-fetch": "^2.2.0",
+		"tslint": "^5.11.0",
+		"typescript": "^3.1.1"
+	},
+	"displayName": "Dark+ Material",
+	"engines": {
+		"vscode": "*"
+	},
+	"galleryBanner": {
+		"color": "#212121",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/vangware/dark-plus-material",
+	"icon": "assets/icon.png",
+	"keywords": [
+		"colorful",
+		"dark",
+		"google",
+		"material",
+		"saturated",
+		"theme",
+		"vscode"
+	],
+	"license": "MIT",
+	"publisher": "vangware",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/vangware/dark-plus-material"
+	},
+	"resolutions": {
+		"@types/node": "10.9.4",
+		"chalk": "2.4.1",
+		"ansi-styles": "3.2.1",
+		"supports-color": "5.5.0"
+	},
+	"scripts": {
+		"update": "ts-node ./src/update.ts"
+	},
+	"__metadata": {
+		"id": "c4e31168-d200-4020-ae9e-1aa7b76d2c52",
+		"publisherId": "01dc48a2-7c38-46de-8f79-6ce4891973fa",
+		"publisherDisplayName": "vangware"
+	}
+}

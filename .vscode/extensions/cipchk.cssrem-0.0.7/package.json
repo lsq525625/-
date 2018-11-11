@@ -1,0 +1,93 @@
+{
+	"name": "cssrem",
+	"displayName": "cssrem",
+	"description": "一个CSS值转REM的VSCode插件",
+	"version": "0.0.7",
+	"publisher": "cipchk",
+	"icon": "icon.png",
+	"license": "MIT",
+	"licenseUrl": "LICENSE",
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cipchk/vscode-cssrem.git"
+	},
+	"bugs": {
+		"url": "https://github.com/cipchk/vscode-cssrem/issues",
+		"email": "cipchk@qq.com"
+	},
+	"homepage": "https://github.com/cipchk/vscode-cssrem",
+	"keywords": [
+		"rem",
+		"px rem",
+		"px to rem",
+		"px2rem",
+		"css rem"
+	],
+	"categories": [
+		"Formatters",
+		"Snippets",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:html",
+		"onLanguage:vue",
+		"onLanguage:css",
+		"onLanguage:less",
+		"onLanguage:scss",
+		"onLanguage:sass",
+		"onLanguage:stylus",
+		"onLanguage:tpl"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.cssrem",
+				"title": "CSSRem PxToRem"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "cssrem configuration",
+			"properties": {
+				"cssrem.rootFontSize": {
+					"type": "number",
+					"default": 16,
+					"description": "root font-size (unit: px), default: 16"
+				},
+				"cssrem.fixedDigits": {
+					"type": "number",
+					"default": 6,
+					"description": "Px to rem decimal point maximum length, default: 6"
+				},
+				"cssrem.autoRemovePrefixZero": {
+					"type": "boolean",
+					"default": true,
+					"description": "Automatically remove prefix 0, default: true"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test",
+		"package": "vsce package"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"__metadata": {
+		"id": "a0e969a7-a8a4-4958-8b82-ad690ebfa5c0",
+		"publisherId": "01530181-ea7a-4925-8d27-e7f2d527df3a",
+		"publisherDisplayName": "cipchk"
+	}
+}

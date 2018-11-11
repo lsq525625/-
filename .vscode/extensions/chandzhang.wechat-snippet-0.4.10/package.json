@@ -1,0 +1,81 @@
+{
+	"name": "wechat-snippet",
+	"description": "微信小程序代码辅助,代码片段自动完成",
+	"version": "0.4.10",
+	"publisher": "ChandZhang",
+	"engines": {
+		"vscode": "^1.20.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"miniapp",
+		"小程序",
+		"wx",
+		"wechat",
+		"wxapi"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "wxml",
+				"extensions": [
+					".wxml"
+				]
+			},
+			{
+				"id": "json",
+				"extensions": [
+					".json"
+				]
+			},
+			{
+				"id": "wxs",
+				"extensions": [
+					".wxs"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/wxjs.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/wxjs.json"
+			},
+			{
+				"language": "wxs",
+				"path": "./snippets/wxjs.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/wxxml.json"
+			},
+			{
+				"language": "wxml",
+				"path": "./snippets/wxxml.json"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/wxjson.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Chand-zhang/wechat-snippet-vscode"
+	},
+	"bugs": {
+		"email": "zhangcd@iiwol.com"
+	},
+	"icon": "assets/image/logo.png",
+	"license": "MIT License",
+	"__metadata": {
+		"id": "6412b276-b4eb-4283-a0c1-3f55ef822ab3",
+		"publisherId": "eb8b75c3-2bdd-44e6-b8f1-0c91a003843b",
+		"publisherDisplayName": "ChandZhang"
+	}
+}

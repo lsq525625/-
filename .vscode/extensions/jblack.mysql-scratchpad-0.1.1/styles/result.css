@@ -1,0 +1,24 @@
+table{
+    border-collapse:collapse;
+}
+td, th{
+    padding: 0.5rem 1rem;
+}
+.vscode-dark td, .vscode-dark th,
+.vscode-high-contrast td, .vscode-high-contrast th{
+    border: 1px solid #fff;
+}
+.vscode-light td, .vscode-light th{
+    border: 1px solid #000;
+}
+.cache-expired-message{
+    font-size: 18px;
+}
+.result-divider{
+    min-height:40px;
+    border-bottom: 3px solid #fff;
+    margin-bottom:40px;
+}
+.vscode-light .result-divider{
+    border-color: #000;
+}

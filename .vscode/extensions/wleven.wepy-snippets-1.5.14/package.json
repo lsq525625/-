@@ -1,0 +1,66 @@
+{
+	"name": "wepy-snippets",
+	"displayName": "wepy snippets",
+	"description": "微信小程序wepy框架,weui框架代码片段",
+	"version": "1.5.14",
+	"publisher": "wleven",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "vue",
+				"path": "./snippets/wepy_html.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/wepy_html.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/wepy_html.json"
+			},
+			{
+				"language": "wpy",
+				"path": "./snippets/wepy_html.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/weui.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/weui.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/weui.json"
+			},
+			{
+				"language": "wpy",
+				"path": "./snippets/weui.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/wepy_api.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/wepy_api.json"
+			}
+		]
+	},
+	"scripts": {
+		"build": "node  ./snippets-src-node/index.js"
+	},
+	"__metadata": {
+		"id": "d7e06654-6ba5-489d-8564-e39db58f608d",
+		"publisherId": "74c3050f-6e2e-46a5-a415-9f84dea1faab",
+		"publisherDisplayName": "wleven"
+	}
+}
